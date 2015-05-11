@@ -1,0 +1,219 @@
+body{
+    background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+}
+.wrapper{
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.back{
+    width: 190px;
+    height: 250px;
+    border: 10px solid #72694e;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color:#8d8465;
+    background-image:
+    repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+    linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+    background-size:70px 120px;
+}
+.front{
+    width: 190px;
+    height: 250px;
+    border: 1px solid #8b8b8b;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+}
+.container:hover .front {
+    z-index: 10;
+}
+
+.container {
+    width: 190px;
+    height: 250px;
+    -webkit-perspective: 1000;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    width: 190px;
+    height: 250px;
+    border-radius: 10px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.container:hover .card {
+    -webkit-transform: rotateY(180deg);
+    -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+
+}
+
+.face {
+    position: absolute;
+}
+
+.inverted{
+    /* Safari */
+    -webkit-transform: rotate(180deg);
+    /* Firefox */
+    -moz-transform: rotate(180deg);
+    /* IE */
+    -ms-transform: rotate(180deg);
+    /* Opera */
+    -o-transform: rotate(180deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+.left-corner,
+.right-corner{
+    position: absolute;
+    font-size: 32px;
+    text-align: center;
+}
+.left-corner{
+    left: 2%;
+    top: 4%;
+}
+.right-corner{
+    right: 2%;
+    bottom: 4%;
+}
+.ten-bottom-center,
+.ten-top-center,
+.half-bottom-center,
+.half-top-center,
+.mid-center,
+.top-center,
+.bottom-center{
+    text-align: center;
+    width: 100%;
+}
+.ten-bottom-center,
+.ten-top-center,
+.eight-top-left,
+.eight-top-right,
+.half-top-left,
+.half-top-right,
+.eight-bottom-left,
+.eight-bottom-right,
+.half-bottom-left,
+.half-bottom-right,
+.half-bottom-center,
+.half-top-center,
+.mid-center,
+.mid-left,
+.mid-right,
+.top-center,
+.bottom-center,
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right{
+    position: absolute;
+    font-size: 54px;
+}
+
+.top-left{
+    top:4%;
+}
+.top-right{
+    top: 4%;
+}
+.bottom-right,
+.bottom-left{
+    bottom: 4%;
+}
+.eight-top-left,
+.eight-bottom-left,
+.half-top-left,
+.half-bottom-left,
+.top-left,
+.mid-left,
+.bottom-left{
+    left: 20%;
+}
+.eight-top-right,
+.eight-bottom-right,
+.half-top-right,
+.half-bottom-right,
+.top-right,
+.mid-right,
+.bottom-right{
+    right: 20%;
+}
+.ten-top-center{
+    top:16%;
+}
+.ten-bottom-center{
+    bottom:16%;
+}
+.mid-left,
+.mid-right,
+.mid-center{
+    top:38%;
+}
+.top-center{
+    top: 4%;
+}
+.eight-top-right,
+.eight-top-left{
+    top:26%;
+}
+.half-top-right,
+.half-top-left,
+.half-top-center{
+    top:20%;
+}
+.eight-bottom-right,
+.eight-bottom-left{
+    bottom: 26%;
+}
+.half-bottom-right,
+.half-bottom-left,
+.half-bottom-center{
+    bottom: 20%;
+}
+.bottom-center{
+    bottom: 4%;
+}
+.pic-container img{
+    position: absolute;
+    height: 60%;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+    border: 2px solid #000;
+    border-style: inset;
+}
+.spades,
+.cluds{
+    color: #000000;
+}
+.heat,
+.diamond{
+    color: #ff0800;
+}
+
